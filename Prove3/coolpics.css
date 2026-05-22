@@ -4,6 +4,7 @@ header{
     text-align: center;
     color:white;
     font-size: x-large;
+    
 }
 main{
     display: grid;
@@ -20,18 +21,36 @@ nav a{
     color: white;
 }
 
+header nav{
+        display: none;
+    }
+
+
+
+
+/* tablet */
 @media screen and (min-width: 700px) {
     main {
         grid-template-columns: 1fr 1fr;
     }
     .menu-btn{
+        display: inline;
+    }
+    header nav{
         display: none;
     }
 }
 
+
+/* desktop */
 @media screen and (min-width: 1000px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
+    .menu-btn{
+    display: none;
+    }
+    header nav{
+        display: inline;
+    }
 }
